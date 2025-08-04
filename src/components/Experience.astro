@@ -1,0 +1,55 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+export const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Estudiante de Ingeniería",
+    company: "Universidad Jose Antonio Paez",
+    description:
+      "Cursando 6to semestre de Ingeniería en Telecomunicaciones. Especial interés en la intersección entre las telecomunicaciones y el desarrollo de software. Cursos relevantes:",
+    details: [
+      "Redes de computadoras y sistemas de comunicación",
+      "Fundamentos de programación aplicada",
+      "Teoría electromagnética aplicada"
+    ],
+    skills: [ "Sistemas distribuidos", "Resolución de problemas"]
+  },
+  {
+    date: "2024",
+    title: "Desarrollador Frontend (Formación)",
+    company: "Coderhouse",
+    description:
+      "Cursos completados en desarrollo web con especialización en JavaScript. Certificado destacado:",
+    details: [
+      "E-commerce funcional con carrito de compras (React)",
+      "Aplicación interactiva con JavaScript vanilla",
+      "Sitio web responsive con HTML/CSS moderno"
+    ],
+    skills: ["HTML5", "CSS3", "JavaScript", "React", "Git"],
+    link: "https://pub.coderhouse.com/legacy-certificates/687fe2c5df6b3deade284a45"
+  },
+  {
+    date: "Proyectos Personales",
+    title: "Desarrollador Autodidacta",
+    company: "Portafolio Académico",
+    description:
+      "Desarrollo constante de proyectos para aplicar y expandir mis conocimientos técnicos:",
+    details: [
+      "Prototipos de interfaces web interactivas",
+      "Ejercicios de algoritmos y estructuras de datos",
+      "Prácticas con APIs y datos en tiempo real"
+    ],
+    skills: ["Resolución creativa", "Autoaprendizaje", "Gestión de proyectos"]
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
