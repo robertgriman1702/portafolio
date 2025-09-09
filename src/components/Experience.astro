@@ -1,31 +1,54 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+
 export const EXPERIENCE = [
   {
-    date: "Actualmente...",
-    title: "Estudiante de Ingeniería",
-    company: "Universidad Jose Antonio Paez",
+    date: "2025",
+    title: "🛍️ E-commerce React - Proyecto Final",
+    company: "Coderhouse - Desarrollo Frontend",
     description:
-      "Cursando 6to semestre de Ingeniería en Telecomunicaciones. Especial interés en la intersección entre las telecomunicaciones y el desarrollo de software. Cursos relevantes:",
+      "Aplicación de e-commerce desarrollada con React como proyecto final del curso de CoderHouse. Incluye catálogo de productos, carrito de compras, checkout y sistema de órdenes.",
     details: [
-      "Redes de computadoras y sistemas de comunicación",
-      "Fundamentos de programación aplicada",
-      "Teoría electromagnética aplicada"
+      "Catálogo completo con filtrado por categorías",
+      "Carrito de compras interactivo con Context API",
+      "Backend en Firebase (Firestore Database)",
+      "Sistema de checkout con generación de órdenes",
+      "Totalmente responsive para todos los dispositivos",
+      "UI moderna con animaciones y efectos"
     ],
-    skills: [ "Sistemas distribuidos", "Resolución de problemas"]
+    skills: ["React", "Firebase", "React Router", "Context API", "CSS Modules", "Git"],
+    link: "https://pub.coderhouse.com/certificates/efb98174-e80d-4715-a4cc-bc6ef01ef3a9?v=1"
   },
   {
-    date: "2024",
-    title: "Desarrollador Frontend (Formación)",
-    company: "Coderhouse",
+    date: "2025",
+    title: "React JS - Certificación",
+    company: "Coderhouse - Top 10%",
     description:
-      "Cursos completados en desarrollo web con especialización en JavaScript. Certificado destacado:",
+      "Curso especializado en React JS con certificación y reconocimiento por estar en el Top 10% del curso.",
     details: [
-      "E-commerce funcional con carrito de compras (React)",
-      "Aplicación interactiva con JavaScript vanilla",
-      "Sitio web responsive con HTML/CSS moderno"
+      "Componentes funcionales y hooks avanzados",
+      "Manejo de estado con Context API y Redux",
+      "Routing con React Router",
+      "Integración con APIs y Firebase",
+      "Patrones de diseño y mejores prácticas"
     ],
-    skills: ["HTML5", "CSS3", "JavaScript", "React", "Git"],
+    skills: ["React", "Hooks", "Context API", "React Router", "Firebase", "APIs"],
+    link: "https://pub.coderhouse.com/certificates/efb98174-e80d-4715-a4cc-bc6ef01ef3a9?v=1"
+  },
+  {
+    date: "2025",
+    title: "JavaScript - Certificación",
+    company: "Coderhouse - Top 10%",
+    description:
+      "Curso avanzado de JavaScript con certificación y reconocimiento por estar en el Top 10% del curso.",
+    details: [
+      "JavaScript moderno (ES6+)",
+      "Programación asíncrona y promesas",
+      "Manipulación del DOM",
+      "POO en JavaScript",
+      "Algoritmos y estructuras de datos"
+    ],
+    skills: ["JavaScript", "ES6+", "Async/Await", "DOM", "POO", "Algoritmos"],
     link: "https://pub.coderhouse.com/legacy-certificates/687fe2c5df6b3deade284a45"
   },
   {
@@ -47,7 +70,7 @@ export const EXPERIENCE = [
 <ol class="relative mt-16">
   {
     EXPERIENCE.map((experience) => (
-      <li class="">
+      <li>
         <ExperienceItem {...experience} />
       </li>
     ))
